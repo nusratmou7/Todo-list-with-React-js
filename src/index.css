@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.main_div{
+    width: 100%;
+    height:100vh;
+    background: #d6d849;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.center_div{
+    width:25%;
+    height:80vh;
+    background-color:  #9cda8f;
+    box-shadow:5px 5px 25px -5px rgba(0,0,0,0.3); ;
+    border-radius: 15px;
+}
+.todo_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+h1{
+    color: rgba(12, 9, 9);
+    background: transparent;
+    border-color:  #8566aa;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10PX;
+    box-shadow:5px 5px 25px -5px rgba(0,0,0,0.3); 
+}
+input{
+    text-align: center;
+    height: 30px;
+    top:10px;
+    border:none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width:60%;
+    border-bottom: 2px solid #8566aa;
+    outline: none;
+}
+button{
+    min-height: 40px;
+    width:40px;
+    border-bottom: 50%;
+    border-color: transparent;
+    background-color: #8566aa;
+    color:white;
+    border: none;
+    outline: none;
+    font-size: 40px;
+    margin-left:10px;
+    box-shadow:5px 5px 25px -5px rgba(0,0,0,0.3); 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button:hover{
+    background-color: turquoise;
+}
+ol{
+    margin-top:30px;
+}
+ol li{
+    padding-left: 0px;
+    text-align: left;
+    font-size:20px;
+    min-height:40px;
+    display: flex;
+    color:#8566aa;
+    align-items: center;
+    text-transform: capitalize;
+}
+.todo_style .fa-times{
+    width:30px;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(214, 8, 39);
+    border-radius: 50%;
+    margin:0 15px 0 35px;
+    color:rgb(255, 248, 248);
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+    align-items: center;
+}
+.todo_style .fa-times:hover{
+    background-color: darkred;
+}
+.todo_style .fa-times:hover .list_style{
+    color:darkred;
 }
